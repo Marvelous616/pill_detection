@@ -1,6 +1,6 @@
 {
-    "name": "pill_app",
-    "short_name": "pill_app",
+    "name": "PillOra",
+    "short_name": "PillOra",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

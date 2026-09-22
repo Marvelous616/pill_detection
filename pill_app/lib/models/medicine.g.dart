@@ -21,13 +21,18 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
       imagePath: fields[1] as String,
       doseTimes: (fields[2] as List).cast<String>(),
       lastTaken: fields[3] as DateTime?,
+      dosage: fields[4] as String?,
+      notes: fields[5] as String?,
+      remindersEnabled: fields[6] as bool?,
+      mealTiming: fields[7] as String?,
+      restrictions: (fields[8] as List?)?.cast<String>(),
     );
   }
 
   @override
   void write(BinaryWriter writer, Medicine obj) {
     writer
-      ..writeByte(4)
+      ..writeByte(9)
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
@@ -35,7 +40,17 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
       ..writeByte(2)
       ..write(obj.doseTimes)
       ..writeByte(3)
-      ..write(obj.lastTaken);
+      ..write(obj.lastTaken)
+      ..writeByte(4)
+      ..write(obj.dosage)
+      ..writeByte(5)
+      ..write(obj.notes)
+      ..writeByte(6)
+      ..write(obj.remindersEnabled)
+      ..writeByte(7)
+      ..write(obj.mealTiming)
+      ..writeByte(8)
+      ..write(obj.restrictions);
   }
 
   @override
