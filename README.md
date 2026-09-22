@@ -4,7 +4,7 @@ PillOra is a simple, offline-first medication reminder app that makes it easy to
 
 | | | | |
 |---|---|---|---|
-| ![Screenshot 1](ex_images/image.png) | ![Screenshot 2](ex_images/image1.png) | ![Screenshot 3](ex_images/image2.png) | ![Screenshot 4](ex_images/image3.png) |
+| ![Screenshot 1](pill_app/ex_images/image.png) | ![Screenshot 2](pill_app/ex_images/image1.png) | ![Screenshot 3](pill_app/ex_images/image2.png) | ![Screenshot 4](pill_app/ex_images/image3.png) |
 
 ## Features
 
